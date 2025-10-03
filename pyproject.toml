@@ -1,0 +1,42 @@
+[project]
+name = "racial-bias-paper"
+version = "0.1.0"
+description = "Reproducible analyses and models for the racial bias paper."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "matplotlib-inline>=0.1.6",
+    "seaborn>=0.13",
+    "h5py>=3.10",
+    "tensorflow>=2.15",
+    "keras>=2.15",
+    "imbalanced-learn>=0.11",
+    "lime>=0.2",
+    "shap>=0.44",
+    "transformers>=4.39",
+    "tqdm>=4.66",
+    "xgboost>=2.0"
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "ipykernel>=6.29",
+    "pip",
+    "jupyterlab>=4.1"
+]
+
+[tool.uv]
+package = true
+index-url = "https://pypi.org/simple"
+
+[tool.uv.sources]
+# Local modules are located under src/; adjust once the package layout is finalized.
+helper_functions = { path = "helper_functions" }
+
+[tool.setuptools]
+packages = ["helper_functions"]

@@ -1,0 +1,52 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments and tooling
+.venv/
+venv/
+ENV/
+.env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.uv/
+.ruff_cache/
+
+# IDE / editor metadata
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Project data artifacts (large or reproducible)
+experiments_data/
+my_dir/
+MIMIC-IV*/
+mimic-iv-2.2/
+*.csv
+*.npz
+*.h5
+*.npy
+
+# Model artifacts
+*.ckpt
+*.onnx
+
+# Notebook checkpoints and exports
+*.nbconvert.ipynb
+
+# Misc
+Thumbs.db
